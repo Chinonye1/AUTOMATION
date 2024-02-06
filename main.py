@@ -29,7 +29,7 @@ def scrape_flu_vaccination_data(url):
 
 
 def clean_data(df):
-    # Example cleaning function - adjust based on the structure of your data
+    # cleaning function - adjust based on the structure of your data
     if not df.empty:
         # Perform data cleaning steps here, such as renaming columns, handling missing data, etc.
         cleaned_df = df.rename(columns=lambda x: x.strip()).dropna()
@@ -39,7 +39,7 @@ def clean_data(df):
 
 
 if __name__ == "__main__":
-    # Placeholder URL - replace with the actual URL you intend to scrape
+    # Placeholder URL 
     url = 'https://www.cdc.gov/flu/fluvaxview/coverage-2021estimates.htm'
     flu_data = scrape_flu_vaccination_data(url)
 
